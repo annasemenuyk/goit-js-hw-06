@@ -33,8 +33,6 @@ const ingredientEl = ingredients.map(ingredients=>{
 });
 console.log(ingredientsEl);
 // Добавит элементу класс item.
-const menuItemsByTagName = document.querySelectorAll("li");
-console.log(menuItemsByTagName);
-menuItemsByTagName.classList.add('item');
+ingredientsEl.classList.add('.item');
 // После чего вставит все <li> за одну операцию в список ul.ingredients.
 ingredientsEl.append(...ingredientEl);
