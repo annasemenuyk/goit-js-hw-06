@@ -12,9 +12,8 @@
 //   <button type="submit">Login</button>
 // </form>
 const formSub = document.querySelector('.login-form');
-console.log(`formSub`,formSub)
 formSub.addEventListener('imput',(event)=>{
-    console.log(`event`,event)
+    console.log(`event`,event.target.value);
 })
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
