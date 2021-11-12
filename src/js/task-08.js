@@ -14,10 +14,11 @@
 const formSub = document.querySelector('.login-form');
 const classes = (classes) => document.querySelector(classes);
 console.log (classes);
-console.log (formSub);
-// formSub.addEventListener('submit',(event)=>{
-//     console.log(`event`,event.target.value);
-// })
+console.log ("formSub",formSub);
+formSub.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    console.log(`event`,event.target.value);
+})
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
 // При отправке формы страница не должна перезагружаться.
