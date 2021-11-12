@@ -17,7 +17,7 @@ console.log (classes);
 console.log (`formSub`,formSub);
 formSub.addEventListener('submit',(event)=>{
     event.preventDefault();
-    console.log(`event`, event.elements);
+    console.log(`event`, event.target.elements);
 })
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
