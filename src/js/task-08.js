@@ -15,7 +15,6 @@ const formSub = document.querySelector('.login-form');
 const classes = (classes) => document.querySelector(classes);
 console.log (classes);
 console.log (`formSub`,formSub);
-const response = {};
 formSub.addEventListener('submit',(event)=>{
     event.preventDefault();// При отправке формы страница не должна перезагружаться.
     // console.log(`event`, event.target.elements);
@@ -24,11 +23,13 @@ formSub.addEventListener('submit',(event)=>{
     // console.log (`password`, password.value)
     // response.email = email.value;
     // response.password =password.value;
-    // console.log (`response`, response);
     console.log(`event.target`, event.target);
     const formData = new FormData(event.target);
+    const response = {};
     formData.forEach ((value, name) =>{
-        console.log (`${name}: ${value}`)
+        console.log (`${name}: ${value}`);
+        response[name]=value;
+        console.log (`response`, response);
     });
     });
 
