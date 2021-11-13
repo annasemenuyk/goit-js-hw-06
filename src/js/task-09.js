@@ -8,9 +8,9 @@
 const backgroundSpanElem = document.querySelector ('.color');
 const btnElem = document.querySelector ('.change-color');
 const backgroundBodyElem = document.querySelector ('body');
-const colorBody = getRandomHexColor()
 btnElem.addEventListener ( `click`, cangeBackgroundColor);
 function cangeBackgroundColor () {
+  const colorBody = getRandomHexColor()
   backgroundBodyElem.style.backgroundColor = colorBody;
   backgroundSpanElem.textContent = colorBody;
 // Для генерации случайного цвета используй функцию getRandomHexColor.
