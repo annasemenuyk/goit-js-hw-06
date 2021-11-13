@@ -23,7 +23,7 @@ refs.destroy.addEventListener("click", destroyBoxes);
 function getAmount() {
 const amount = +document.getElementById("controls").value;
 createBoxes(amount);
-console.log(getAmount);
+console.log(amount)
 }
 function createBoxes(amount) {
   const basicSize = 30;
@@ -31,7 +31,7 @@ function createBoxes(amount) {
 for (let i = 0; i < amount; i++) {
   let size = basicSize + i + 10;
   let div = document.createElement('div');
-  div.style.cssText = `width: ${size}px; height: ${size}px; background-color: rgba( ${random()} , ${random()} , ${random()} )`;
+  div.style.cssText = `width: ${size}px; height: ${size}px; background-color: rgba( ${getRandomHexColor()} , ${getRandomHexColor()} , ${getRandomHexColor()} )`;
   fragment.appendChild(div);
 }
 
@@ -42,6 +42,6 @@ function destroyBoxes() {
   refs.boxes.innerHTML = "";
 }
 
-function random() {
-return Math.floor(Math.random() * 256);
-}
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  }
