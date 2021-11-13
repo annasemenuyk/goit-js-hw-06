@@ -2,8 +2,8 @@
 //  Напиши скрипт создания и очистки коллекции элементов. 
 // Пользователь вводит количество элементов в input и нажимает кнопку Создать, 
 // после чего рендерится коллекция.
- const create = document.querySelector('[data-create = "create"]');
- const destroy = document.querySelector('[data-destroy = "destroy"]');
+ const create = document.querySelector('data-create');
+ const destroy = document.querySelector('data-destroy');
  const boxes = document.getElementById("boxes");
 create.addEventListener ('click', getAmount);
 destroy.addEventListener (`click`, destroyBoxes);
