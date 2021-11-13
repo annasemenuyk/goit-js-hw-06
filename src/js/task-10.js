@@ -15,7 +15,7 @@
 const refs = {
   create : document.querySelector('[data-create]'),
   destroy : document.querySelector('[data-destroy]'),
-  boxes : document.getElementById("boxes"),
+  boxes : document.getElementById('boxes'),
 };
 refs.create.addEventListener("click", getAmount);
 refs.destroy.addEventListener("click", destroyBoxes);
@@ -23,6 +23,7 @@ refs.destroy.addEventListener("click", destroyBoxes);
 function getAmount() {
 const amount = +document.getElementById("controls").value;
 createBoxes(amount);
+console.log(amount);
 }
 function createBoxes(amount) {
   const basicSize = 30;
