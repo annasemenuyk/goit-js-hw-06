@@ -23,7 +23,7 @@ refs.destroy.addEventListener("click", destroyBoxes);
 function getAmount() {
 const amount = +document.getElementById("controls").value;
 createBoxes(amount);
-console.log(amount);
+console.log(getAmount);
 }
 function createBoxes(amount) {
   const basicSize = 30;
