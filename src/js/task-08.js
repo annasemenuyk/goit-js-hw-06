@@ -16,15 +16,21 @@ const classes = (classes) => document.querySelector(classes);
 console.log (classes);
 console.log (`formSub`,formSub);
 formSub.addEventListener('submit',(event)=>{
-    event.preventDefault();
+    event.preventDefault();// При отправке формы страница не должна перезагружаться.
     console.log(`event`, event.target.elements);
+    const [email,password] = event.target.elements;
+    console.log (`email`, email.value);
+    console.log (`password`, password.value)
 })
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
-// При отправке формы страница не должна перезагружаться.
+
 
 // Если в форме есть незаполненные поля, выводи alert с предупреждением о том, 
 // что все поля должны быть заполнены.
+if (Text.input === ""){
+    alert:`все поля должны быть заполнены`
+}
 
 // Если пользователь заполнил все поля и отправил форму, собери значения полей в обьект, 
 // где имя поля будет именем свойства, а значение поля - значением свойства. 
