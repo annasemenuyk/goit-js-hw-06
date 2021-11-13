@@ -5,9 +5,8 @@
  const create = document.querySelector('[data-create = "Create"]');
  const destroy = document.querySelector('[data-destroy = "Destroy"]');
  const boxes = document.getElementById("boxes");
-create.addEventListener (`click`, getAmount);
+create.addEventListener ('click', getAmount);
 destroy.addEventListener (`click`, destroyBoxes);
-console.log(`click`,create)
 function getAmount() {
 const amount = +document.getElementById("controls").value;
 createBoxes(amount);
