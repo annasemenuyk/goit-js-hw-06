@@ -17,13 +17,7 @@ console.log (classes);
 console.log (`formSub`,formSub);
 formSub.addEventListener('submit',(event)=>{
     event.preventDefault();// При отправке формы страница не должна перезагружаться.
-    // console.log(`event`, event.target.elements);
-    // const [email,password] = event.target.elements;
-    // console.log (`email`, email.value);
-    // console.log (`password`, password.value)
-    // response.email = email.value;
-    // response.password =password.value;
-    console.log(`event.target`, event.target);
+      console.log(`event.target`, event.target);
     const formData = new FormData(event.target);
     const response = {};
     formData.forEach ((value, name) =>{
