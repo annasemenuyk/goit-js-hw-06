@@ -25,9 +25,12 @@ formSub.addEventListener('submit',(event)=>{
     // response.email = email.value;
     // response.password =password.value;
     // console.log (`response`, response);
-    console.log(`event`, event.target);
+    console.log(`event.target`, event.target);
     const formData = new FormData(event.target);
-});
+    formData.forEach (value, name) =>{
+        console.log (`${name}: ${value}`)
+    }
+    });
 
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
