@@ -15,13 +15,17 @@ const formSub = document.querySelector('.login-form');
 const classes = (classes) => document.querySelector(classes);
 console.log (classes);
 console.log (`formSub`,formSub);
+const response = {};
 formSub.addEventListener('submit',(event)=>{
     event.preventDefault();// При отправке формы страница не должна перезагружаться.
     console.log(`event`, event.target.elements);
     const [email,password] = event.target.elements;
     console.log (`email`, email.value);
     console.log (`password`, password.value)
+    response.email = email.value;
+    response.password =password.value;
 })
+console.log (`response`, response)
 // Обработка отправки формы form.login-form должна быть по событию submit.
 
 
