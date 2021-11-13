@@ -13,8 +13,8 @@
 должен быть шире и выше предыдущего на 10px
 Создай функцию destroyBoxes(), которая очищает div#boxes. */
 const refs = {
-  create : document.querySelector('[data-create = "create"]'),
-  destroy : document.querySelector('[data-destroy = "destroy"]'),
+  create : document.querySelector('[data-create = "Create"]'),
+  destroy : document.querySelector('[data-destroy = "Destroy"]'),
   boxes : document.getElementById("boxes"),
 };
 refs.create.addEventListener(`click`, getAmount);
