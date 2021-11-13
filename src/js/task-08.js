@@ -27,7 +27,7 @@ formSub.addEventListener('submit',(event)=>{
     // console.log (`response`, response);
     console.log(`event.target`, event.target);
     const formData = new FormData(event.target);
-    formData.forEach ({value, name} =>{
+    formData.forEach ((value, name) =>{
         console.log (`${name}: ${value}`)
     });
     });
