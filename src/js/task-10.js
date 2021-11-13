@@ -12,7 +12,7 @@
 Каждый следующий div после первого, 
 должен быть шире и выше предыдущего на 10px
 Создай функцию destroyBoxes(), которая очищает div#boxes. */
-const refs = {
+let refs = {
   create : document.querySelector('[data-create = "Create"]'),
   destroy : document.querySelector('[data-destroy = "Destroy"]'),
   boxes : document.getElementById("boxes"),
