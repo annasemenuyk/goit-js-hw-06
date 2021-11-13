@@ -41,14 +41,14 @@ const form = document.querySelector('.login-form');
     function handleSubmit(event) {
       event.preventDefault();
       const {
-        elements: { login, password }
+        elements: { email, password }
       } = event.currentTarget;
     
-      if (login.value === "" || password.value === "") {
+      if (email.value === "" || password.value === "") {
         return alert("Please fill in all the fields! Все поля должны быть заполнены");
       }
     
-      console.log(`Login: ${login.value}, Password: ${password.value}`);
+      console.log(`Email: ${login.value}, Password: ${password.value}`);
       event.currentTarget.reset();
     }
     
