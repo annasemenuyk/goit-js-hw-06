@@ -24,9 +24,10 @@ formSub.addEventListener('submit',(event)=>{
     response.email = email.value;
     response.password =password.value;
     console.log (`response`, response);
-    if (response === ""){
-      return  alert('все поля должны быть заполнены')}
-       ;
+    if (email.value === "" || password.value === ""){
+      return  alert('все поля должны быть заполнены')};
+      console.log(`Email: ${email.value}, Password: ${password.value}`);
+  event.currentTarget.reset();
     // console.log(`event.target`, event.target);
     // const formData = new FormData(event.target);
     // const response = {};
