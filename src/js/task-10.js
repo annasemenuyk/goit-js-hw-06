@@ -20,12 +20,12 @@ const refs = {
 refs.create.addEventListener("click", getAmount);
 refs.destroy.addEventListener("click", destroyBoxes);
 
-function getAmount() {
-const amount = +document.getElementById("controls").value;
-createBoxes(amount);
-console.log(amount)
-}
 function createBoxes(amount) {
+  function getAmount() {
+    const amount = +document.getElementById("controls").value;
+    createBoxes(amount);
+    console.log(amount)
+    }
   const basicSize = 30;
   let fragment = document.createDocumentFragment();
 for (let i = 0; i < amount; i++) {
