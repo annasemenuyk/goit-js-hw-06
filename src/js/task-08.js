@@ -42,7 +42,7 @@ formSub.addEventListener('submit',(event)=>{
 // что все поля должны быть заполнены.
 if (response === ""){
     alert(`все поля должны быть заполнены`);
-    
+    alert(console.log (`response`, response))
 }
 
 // Если пользователь заполнил все поля и отправил форму, собери значения полей в обьект, 
