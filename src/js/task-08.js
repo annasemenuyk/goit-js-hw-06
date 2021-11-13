@@ -24,6 +24,9 @@ formSub.addEventListener('submit',(event)=>{
     response.email = email.value;
     response.password =password.value;
     console.log (`response`, response);
+    if (response === ""){
+      return  alert('все поля должны быть заполнены')}
+       ;
     // console.log(`event.target`, event.target);
     // const formData = new FormData(event.target);
     // const response = {};
@@ -40,10 +43,7 @@ formSub.addEventListener('submit',(event)=>{
 
 // Если в форме есть незаполненные поля, выводи alert с предупреждением о том, 
 // что все поля должны быть заполнены.
-if (response === ""){
-    alert(`все поля должны быть заполнены`)}
-    else {
-        alert(console.log (`response`, response))};
+
 
 
 // Если пользователь заполнил все поля и отправил форму, собери значения полей в обьект, 
