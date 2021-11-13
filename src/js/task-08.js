@@ -48,7 +48,7 @@ const form = document.querySelector('.login-form');
         return alert("Please fill in all the fields! Все поля должны быть заполнены");
       }
     
-      console.log(`Email: ${login.value}, Password: ${password.value}`);
+      console.log(`Email: ${email.value}, Password: ${password.value}`);
       event.currentTarget.reset();
     }
     
